@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_20-02-45",
+            "content": "@@ -531,17 +531,16 @@\n n f%22size\n-:\n  (%7Bself.\n@@ -811,8 +811,16 @@\n rgs%5B1%5D)%0A\n+        \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-06_20-03-16",
+            "content": "@@ -532,16 +532,17 @@\n  f%22size:\n+ \n (%7Bself.g\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-06_20-03-27",
+            "content": "@@ -532,17 +532,16 @@\n  f%22size:\n- \n (%7Bself.g\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-06_20-05-21",
+            "content": "@@ -63,21 +63,17 @@\n tr = %22%22%0A\n-    \n %0A\n+\n     def \n@@ -120,21 +120,17 @@\n tamanho%0A\n-    \n %0A\n+\n     def \n@@ -354,16 +354,17 @@\n  != %22XG%22\n+ \n :%0A      \n@@ -423,11 +423,9 @@\n , GG\n- ou\n+,\n  XG%22\n@@ -449,17 +449,9 @@\n urn%0A\n-        \n %0A\n+\n     \n@@ -656,16 +656,17 @@\n and.spli\n+n\n t()%0A%0A   \n@@ -778,16 +778,16 @@\n %22size%22:%0A\n-\n         \n@@ -811,8 +811,9 @@\n args%5B1%5D)\n+%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-06_20-07-09",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n    \n    def getTamanho(self):\n        return self.__tamanho\n    \n    def setTamanho(self, tamanho: str):\n        if tamanho != \"PP\" \\\n            and tamanho != \"P\" \\\n            and tamanho != \"M\" \\\n            and tamanho != \"G\" \\\n            and tamanho != \"GG\" \\\n            and tamanho != \"XG\":\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n            return\n        \n        self.__tamanho = tamanho\n\n    def __str__(self) -> str:\n        return f\"size: ({self.getTamanho()})\"\n\nroupa = Roupa()\n\nwhile True:\n    command = input()\n    print(\"$\" + command)\n    args = command.split()\n\n    if args[0] == \"end\":\n        break\n    elif args[0] == \"show\":\n        print(roupa)\n    elif args[0] == \"size\":\n        roupa.setTamanho(args[1])",
+            "lines": "35"
+        }
+    ]
+}

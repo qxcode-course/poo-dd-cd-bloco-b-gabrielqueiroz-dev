@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_19-42-10",
+            "content": "@@ -155,17 +155,16 @@\n ho: int)\n-:\n %0A       \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-06_19-42-28",
+            "content": "class Chinela:\n    def __init__(self):\n        self.__tamanho = 0\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, tamanho: int):\n        if tmanho > 50 or tamanho < 20:\n            print(\"fail: deu erro amigo\")\n            return\n        self.__tamanho = tamanho\n\nchinela = Chinela()\nwhile chinela.getTamanho() == 0:\n    print(\"Digite seu tamanho de chinela\")\n    tamanho = int(input())\n    chinela.setTamanho(tamanho)\n\nprint(\"Parabens, voc\u00ea comprou uma chinela tamanho\", chinela.getTamanho())\n",
+            "lines": "20"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_19-50-48",
+            "content": "@@ -14,17 +14,16 @@\n %0A    def\n- \n __init__\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-06_19-51-38",
+            "content": "@@ -460,22 +460,20 @@\n ho%0A%0A\n-camisa = Camis\n+roupa = Roup\n a() \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-06_19-52-06",
+            "content": "@@ -481,21 +481,20 @@\n  %0Awhile \n-camis\n+roup\n a.getTam\n@@ -576,21 +576,20 @@\n () %0A    \n-camis\n+roup\n a.setTam\n@@ -654,21 +654,20 @@\n manho%22, \n-camis\n+roup\n a.getTam\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-06_19-52-36",
+            "content": "@@ -62,16 +62,17 @@\n  str = %22\n+ \n %22%0A%0A    d\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-06_19-53-50",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, tamanho: str):\n        if tamanho != \"PP\" \\\n            and tamanho != \"P\" \\\n            and tamanho != \"M\" \\\n            and tamanho != \"G\" \\\n            and tamanho != \"GG\" \\\n            and tamanho != \"XG\" :\n            print(\"fail: erro no tamanho\")\n            return\n\n        self.__tamanho = tamanho\n\ncamisa = Camisa() \nwhile camisa.getTamanho() == \"\": \n    print(\"Digite seu tamanho de roupa\")\n    tamanho = input() \n    camisa.setTamanho(tamanho) \n\nprint(\"Parabens, voc\u00ea comprou uma roupa tamanho\", camisa.getTamanho())\n\n",
+            "lines": "27"
+        }
+    ]
+}
