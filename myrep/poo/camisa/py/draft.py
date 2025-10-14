@@ -16,7 +16,8 @@ class Camisa:
             return
 
         self.__tamanho = tamanho
-
+ 
+ 
 camisa = Camisa() 
 while camisa.getTamanho() == "": 
     print("Digite seu tamanho de roupa")

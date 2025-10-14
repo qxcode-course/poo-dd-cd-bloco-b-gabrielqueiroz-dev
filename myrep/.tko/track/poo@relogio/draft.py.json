@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-14_19-42-48",
+            "content": "@@ -420,21 +420,16 @@\n   return\n- self\n .__hour%0A\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-14_19-43-23",
+            "content": "@@ -1542,16 +1542,17 @@\n and.spli\n+n\n t()%0A%0A   \n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-14_19-43-42",
+            "content": "@@ -1286,24 +1286,28 @@\n setHour(0)%0A%0A\n+    \n     def __st\n@@ -1310,32 +1310,36 @@\n __str__ (self):%0A\n+    \n         return f\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-14_19-45-45",
+            "content": "@@ -1347,25 +1347,27 @@\n tHour(): 02%7D\n-:\n+ : \n %7Bself.getMin\n@@ -1376,17 +1376,19 @@\n e(): 02%7D\n-:\n+ : \n %7Bself.ge\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-14_19-45-57",
+            "content": "@@ -1347,16 +1347,17 @@\n tHour():\n+ \n 02%7D:%7Bsel\n@@ -1370,16 +1370,17 @@\n inute():\n+ \n 02%7D:%7Bsel\n@@ -1393,16 +1393,17 @@\n econd():\n+ \n 02%7D%22%0A%0Ade\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-14_19-46-16",
+            "content": "@@ -1178,26 +1178,25 @@\n        if se\n-lf\n+t\n .getHour() %3C\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-14_19-46-39",
+            "content": "class Watch:\n\n    def __init__ (self, hour = 0, minute = 0, second = 0):\n        self.__hour = 0\n        self.__minute = 0\n        self.__second = 0\n        self.setHour(hour)\n        self.setMinute(minute)\n        self.setSecond(second)\n\n    def setHour(self, hour):\n        if 0 > hour or hour > 23:\n            print(\"fail: hora invalida\")\n            return\n        self.__hour = hour\n\n    def getHour(self):\n        return self.__hour\n\n    def setMinute(self, minute):\n        if 0 > minute or minute > 59:\n            print(\"fail: minuto invalido\")\n            return\n        self.__minute = minute\n\n    def getMinute(self):\n        return self.__minute\n\n    def setSecond(self, second):\n        if 0 > second or second > 59:\n            print(\"fail: segundo invalido\")\n            return\n        self.__second = second\n\n    def getSecond(self):\n        return self.__second\n\n    def nextSecond(self):\n        if self.getSecond() < 59:\n            self.getSecond(self.getSecond() + 1)\n            return\n\n        self.setSecond(0)\n\n        if self.getMinute() > 59:\n            self.setMinute(self.getMinute() + 1)\n            return\n\n        self.setMinute(0)\n        \n        if self.getHour() < 23:\n            self.setHour(self.getHour() + 1)\n            return\n\n        self.setHour(0)\n\n    def __str__ (self):\n        return f\"{self.getHour():02}:{self.getMinute():02}:{self.getSecond():02}\"\n\ndef main():\n    watch = Watch()\n    while True:\n        command = input()\n        print(\"$\" + command)\n        args = command.split()\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(watch)\n        elif args[0] == \"set\":\n            watch.setHour(int(args[1]))\n            watch.setMinute(int(args[2]))\n            watch.setSecond(int(args[3]))\n        elif args[0] == \"init\":\n            watch = Watch(int(args[1]), int(args[2]), int(args[3]))\n        elif args [0] == \"next\":\n            watch.nextSecond()\n        else:\n            print(\"fail: comando invalido\")\n\nmain()",
+            "lines": "82"
+        }
+    ]
+}

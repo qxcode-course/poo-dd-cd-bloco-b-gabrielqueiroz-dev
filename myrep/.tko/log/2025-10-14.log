@@ -1,0 +1,19 @@
+2025-10-14 18:55:26, SELF, v:1, k:poo@chinela, rate:100, human:ajuda_do_amigo, alone:6, study:5
+2025-10-14 18:55:26, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-14 18:55:30, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-14 18:55:33, MOVE, v:1, k:poo@relogio, mode:DOWN
+2025-10-14 19:42:46, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-14 19:42:48, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:82
+2025-10-14 19:43:20, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-14 19:43:22, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-14 19:43:23, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:82
+2025-10-14 19:43:38, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-14 19:43:40, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-14 19:43:42, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:82
+2025-10-14 19:44:27, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-14 19:45:45, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:82
+2025-10-14 19:45:57, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:82
+2025-10-14 19:46:16, EXEC, v:1, k:poo@relogio, mode:FULL, rate:53, size:82
+2025-10-14 19:46:39, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:82
+2025-10-14 19:46:48, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-14 19:47:03, SELF, v:1, k:poo@relogio, rate:100, alone:10, study:50
