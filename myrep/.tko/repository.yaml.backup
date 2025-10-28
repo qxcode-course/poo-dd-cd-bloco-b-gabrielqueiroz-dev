@@ -2,13 +2,17 @@ version: '0.2'
 sources:
 - database: local
   link: ''
+  type: local
+  branch: master
   cache_path: ''
   cache_timestamp: ''
   filters: null
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  type: remote
+  branch: master
   cache_path: /workspaces/poo-dd-cd-bloco-b-gabrielqueiroz-dev/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-14 18:55:01'
+  cache_timestamp: '2025-10-28 15:45:35'
   filters:
   - acesso
   - simples
@@ -16,10 +20,16 @@ expanded:
 - poo@campanha-principal
 - poo@bloco_b-modificadores-de-acesso
 tasks:
-  poo@chinela: '{rate:100, human:ajuda_do_amigo, alone:6, study:5}'
+  poo@chinela: '{rate:100, human:ajuda_do_amigo, alone:10, study:50}'
   poo@camisa: '{rate:100, alone:10, study:10}'
   poo@roupa: '{rate:100, alone:10, study:15}'
   poo@relogio: '{rate:100, alone:10, study:50}'
+  poo@motoca: '{rate:100, human:fiz_com_um_amigo_na_maquina_dele, alone:10, study:80}'
+  poo@grafite: '{rate:100, human:fiz_junto_de_um_amigo, alone:10, study:60}'
+  poo@motouber: '{rate:100, human:fiz_com_um_amigo, alone:10, study:50}'
+  poo@notebook: '{rate:100, human:fiz_junto_com_um_amigo, alone:10, study:120}'
+  poo@charger: '{rate:100, human:fiz_com_um_amigo, alone:10, study:80}'
+  poo@tamagotchi: '{rate:100, human:fiz_junto_do_meu_amigo, alone:10, study:90}'
 flags:
   quests: 0
   tracks: 0
@@ -27,4 +37,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@relogio
+selected: poo@bloco_b-modificadores-de-acesso
